@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Look like you're lost</title>
+    <style>
+        /* ফন্ট ইমপোর্ট */
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* পুরো পেজের ব্যাকগ্রাউন্ড কালার পরিবর্তন করতে নিচের 'background' বদলান */
+            background: #ffffff; 
+            font-family: 'Arvo', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .page_404 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .four_zero_four_bg {
+            /* আদিম মানুষের GIF ইমেজ পরিবর্তন করতে চাইলে নিচের URL টি পরিবর্তন করুন */
+            background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .four_zero_four_bg h1 {
+            /* '404' লেখাটির সাইজ এবং রঙ বদলাতে নিচের অপশনগুলো দেখুন */
+            font-size: 80px; 
+            color: #000000; /* 404 এর কালার কালো দেওয়া আছে */
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        .content_box_404 {
+            /* ছবি এবং টেক্সটের মাঝখানের দূরত্ব কমাতে/বাড়াতে নিচের মার্জিন পরিবর্তন করুন */
+            margin-top: -50px;
+        }
+
+        .content_box_404 h2 {
+            /* "Look like you're lost" লেখার সাইজ এবং কালার */
+            font-size: 30px;
+            color: #222222;
+            margin-bottom: 10px;
+        }
+
+        .content_box_404 p {
+            /* ছোট টেক্সটটির কালার (হালকা ধূসর বা Grey দেওয়া আছে) */
+            color: #666666;
+            font-size: 16px;
+        }
+
+        /* Go to Home বাটনের মেইন ডিজাইন */
+        .link_404 {
+            color: #ffffff !important; /* বাটনের লেখার রঙ (সাদা) */
+            padding: 12px 30px;
+            /* বাটনের ব্যাকগ্রাউন্ড কালার (সবুজ) বদলাতে নিচের 'background' পরিবর্তন করুন */
+            background: #39ac31; 
+            margin: 20px 0;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 4px; /* বাটনের কোণা কতটা গোল হবে */
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* মাউস বাটনের ওপর নিলে (Hover) যে রঙ হবে */
+        .link_404:hover {
+            background: #2d8a26; /* হোভার করার সময় একটু গাঢ় সবুজ হবে */
+            box-shadow: 0 5px 15px rgba(57, 172, 49, 0.3); /* হালকা ছায়া বা শ্যাডো */
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page_404">
+        <div class="container">
+            <div class="four_zero_four_bg">
+                <h1>404</h1>
+            </div>
+
+            <div class="content_box_404">
+                <h2>Look like you're lost</h2>
+                <p>the page you are looking for not available!</p>
+                <a href="/" class="link_404">Go to Home</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
